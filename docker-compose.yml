@@ -9,7 +9,7 @@ services:
                 uid: 1000
             context: ./
             dockerfile: Dockerfile
-        container_name: test10-app
+        container_name: laraveljet-docker-app
         restart: unless-stopped
         working_dir: /var/www/
         volumes:
@@ -19,7 +19,7 @@ services:
 
     web:
         image: nginx:1.19.4
-        container_name: test10-nginx
+        container_name: laraveljet-docker-nginx
         restart: unless-stopped
         ports:
             - "8000:80"
@@ -32,7 +32,7 @@ services:
 
     pgsql:
         image: postgres:12.4
-        container_name: test10-pgsql12
+        container_name: laraveljet-docker-pgsql12
         restart: unless-stopped
         # expose:
         #     - 5432
