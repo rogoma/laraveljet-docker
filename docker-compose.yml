@@ -43,7 +43,7 @@ services:
         environment:
             POSTGRES_USER: ${DB_USERNAME:-postgres}
             POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
-            POSTGRES_DB: ${DB_DATABASE:-laravel-docker10}
+            POSTGRES_DB: ${DB_DATABASE:-laraveljet-docker}
         networks:
             - test-network
 
