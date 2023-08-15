@@ -70,8 +70,8 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
-    'timezone “America/Asunción”
+    // 'timezone' => 'UTC',
+    'timezone' => 'America/Asuncion',    
 
     /*
     |--------------------------------------------------------------------------
