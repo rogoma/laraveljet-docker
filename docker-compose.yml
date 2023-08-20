@@ -58,15 +58,15 @@ services:
         networks:
             - test-network
 
-    mailhog:
-        image: mailhog/mailhog
-        logging:
-            driver: "none"
-        ports:
-            - ${MAIL_PORT:-1025}:1025
-            - ${MAILHOG_PORT:-8025}:8025
-        networks:
-            - test-network
+    # mailhog:
+    #     image: mailhog/mailhog
+    #     logging:
+    #         driver: "none"
+    #     ports:
+    #         - ${MAIL_PORT:-1027}:1025
+    #         - ${MAILHOG_PORT:-8026}:8025
+    #     networks:
+    #         - test-network
 
 networks:
     test-network:
